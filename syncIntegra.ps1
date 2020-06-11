@@ -1,4 +1,11 @@
-#Send-MailMessage -To "wellbersantos@hotmail.com" -From "mother-of-dragons@houseoftargaryen.net"  -Subject "Hey, Jon" -Body "Some important plain text!" -SmtpServer "201.23.105.84" -Port 587
+<#Script para criar sites, appPool e Sincronizar os dados.
+Nome: SyncSite
+Ver: 0.1
+Data: 10/06/2020
+Criado por: Wellber Santos
+Email: wellber.santos@gmail.com
+#>
+
 param ([string]$aovivo,$siteaovivo)
 $TimeStamp = get-date -f yyyy.MM.dd.hh:mm
 $Source = "\\172.30.0.20\e$\sites\aovivo.integra.tv.br\website\"
